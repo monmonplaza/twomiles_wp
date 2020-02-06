@@ -1,0 +1,53 @@
+@media screen and (max-width: 415px) {
+  .toggle-menu {
+    display: block;
+  }
+
+  .banner {
+    background-position: center 75rem;
+    .banner-wrapper {
+      width: 88%;
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .banner-sm {
+    &-wrapper {
+      h1 {
+        font-size: 3.7rem !important;
+      }
+    }
+  }
+
+  //   ABOUT PAGE
+
+  .management-tab-btn {
+    flex-direction: row;
+    .management-info {
+      text-align: left;
+      margin-left: 1rem;
+    }
+  }
+  .management-tab-content {
+    .more-info {
+      flex-direction: column;
+    }
+    &-wrapper {
+      min-height: 20rem;
+    }
+  }
+
+  //   MAP
+
+  .map-info-inner {
+    height: 80rem;
+    iframe {
+      height: 48rem !important;
+      width: 40rem !important;
+    }
+  }
+
+  //   END OF MEDIA QUERY
+}

@@ -142,7 +142,7 @@ function twomiles_CPT_References() {
     'menu_icon'     => 'dashicons-welcome-widgets-menus',
     //'menu_icon'     => ' http://localhost/training/wp-content/uploads/2019/11/icon.png',
     'menu_position' => 5,
-    'taxonomies'    => array('category'),
+    'taxonomies'    => array('category', 'post_tag'),
     'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
     'has_archive'   => false,
   );
@@ -271,8 +271,37 @@ function twomiles_before_insert_format( $init_array ) {
 			'block' => 'div',  
 			'classes' => 'article-group-box',
 			'wrapper' => true,
-			
-		)
+    ),
+
+    array(  
+			'title' => 'PDF',  
+			'block' => 'div',  
+			'classes' => 'link-file fas fa-file-pdf',
+			'wrapper' => true,
+    ),
+
+    array(  
+			'title' => 'MS Word',  
+			'block' => 'div',  
+			'classes' => 'link-file  fas fa-file-word',
+			'wrapper' => true,
+    ),
+
+    array(  
+			'title' => 'MS Excel',  
+			'block' => 'div',  
+			'classes' => 'link-file  fas fa-file-excel',
+			'wrapper' => true,
+    ),
+    
+    array(  
+			'title' => 'Gray Background',  
+			'block' => 'div',  
+			'classes' => 'bg-gray text-light p-1',
+			'wrapper' => true,
+    )
+
+
 
 	);  
 	// Insert the array, JSON ENCODED, into 'style_formats'
@@ -283,3 +312,5 @@ function twomiles_before_insert_format( $init_array ) {
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'twomiles_before_insert_format' );  
+
+

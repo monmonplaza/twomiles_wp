@@ -1,0 +1,98 @@
+.x-large {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.large {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-gray {
+  color: $lightgray-color;
+}
+
+.text-white {
+  color: $light-color;
+}
+
+.black {
+  font-family: "LatoWebBlack";
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+a,
+li,
+input,
+div {
+  font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+li {
+  margin-bottom: 1.4rem;
+}
+
+.primary-header {
+  font-size: 4rem;
+  font-family: $primary-font;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.sub-header {
+  font-size: 2.5rem;
+  font-family: $primary-font;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}

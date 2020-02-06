@@ -20,7 +20,7 @@
         <?php
          $reference = New WP_Query(array(
             'post_type' => 'references',
-            'posts_per_page' => 6,
+            'posts_per_page' => 10,
             'paged' => get_query_var('paged') ? get_query_var('paged') : 1
 
         ));
@@ -31,6 +31,21 @@
      
         <div class="reference-item">
             <a href="<?php the_permalink();?>"><i class="fas fa-angle-right"></i> <?php the_title(); ?></a>
+            <div class="metadata">
+                <span class="category">Category: <?php the_category(' ')?> | </span>
+                <span class="tags">
+                <?php
+                    $posttags = get_the_tags();
+                    if ($posttags) {
+                    echo '<ul> Tags:';
+                    foreach($posttags as $tag) {
+                        echo '<li class="tag-item">' .$tag->name. '</li>'; 
+                    }
+                    echo '</ul>';
+                    }
+                    ?>
+                </span>
+            </div>
             <p>
                  <?php 
                       $excerpt = get_the_excerpt();  
@@ -59,14 +74,14 @@
                 'next_text' => 'Next',
             ) );
             wp_reset_postdata();
-            ?>
+            ?>  
         </div>
 
         </div>
         <div class="col-md-4">
             <div class="sidebar">
-             
-				<?php echo do_shortcode( '[searchandfilter fields="search,category"]' ); ?>
+                <h3>Look for resources</h3>
+                <?php echo do_shortcode( ' [searchandfilter fields="search,category,post_tag"  types="select" headings="Keywords,Categories,Tags" submit_label="Search"]' ); ?>
 
              </div>
         </div>

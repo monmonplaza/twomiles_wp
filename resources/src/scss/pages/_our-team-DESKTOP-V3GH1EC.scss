@@ -1,0 +1,70 @@
+.management-tab-btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: $lightgray-color;
+  padding: 2rem;
+  //   min-height: 30rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .management-info {
+    padding: 1rem;
+    min-height: 11rem;
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: $dark-color;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $dark-color;
+      font-style: italic;
+    }
+  }
+}
+
+.management-tab-content-main {
+  margin-top: 2rem;
+}
+
+.management-tab-content {
+  min-height: 47rem;
+  margin-bottom: 2rem;
+  display: none;
+
+  &-wrapper {
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+    border: 1px solid $lightgray-color;
+  }
+}
+
+.management-content-active {
+  display: block;
+}
+
+.management-tab-active {
+  background-color: $primary-color;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  opacity: 1 !important;
+  h3 {
+    color: $light-color !important;
+  }
+
+  p {
+    color: $light-color !important;
+  }
+  img {
+    box-shadow: 2px 2px 4px rgba($dark-color, 0.4);
+  }
+}

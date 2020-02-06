@@ -1,0 +1,14 @@
+.pagination {
+  text-align: center;
+  margin-top: 4rem;
+  .page-numbers {
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    color: $light-color;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .current {
+    background-color: darken($primary-color, 20);
+  }
+}

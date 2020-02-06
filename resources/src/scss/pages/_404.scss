@@ -1,0 +1,18 @@
+.error-wrapper {
+  h1 {
+    font-size: 30rem;
+  }
+  h3 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
+.bg-404 {
+  background: linear-gradient(to right, white 20%, rgba(255, 255, 255, 0.2)),
+    url(../img/bg-404.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

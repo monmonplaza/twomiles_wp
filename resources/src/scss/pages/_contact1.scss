@@ -1,0 +1,45 @@
+.page-contact {
+  form {
+    margin-bottom: 2rem;
+  }
+}
+
+.office-info {
+  background: {
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+    color: $primary-color;
+  }
+  color: $light-color;
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      i {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+.office--main {
+  background-image: linear-gradient(
+      rgba($primary-color, 0.4),
+      rgba($primary-color, 0.9)
+    ),
+    url($bg-costa-mesa);
+}
+
+// REMOVE CARD ON THE MAP
+.map-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 50rem;
+  margin-top: 0.5rem;
+}

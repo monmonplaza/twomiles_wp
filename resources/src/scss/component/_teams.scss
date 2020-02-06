@@ -1,0 +1,12 @@
+.employee-content {
+  display: none;
+}
+
+.active-emp-detail {
+  display: block;
+}
+
+.active-emp {
+  background-color: $lightgray-color;
+  color: $dark-color;
+}

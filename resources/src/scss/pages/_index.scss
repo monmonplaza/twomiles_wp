@@ -1,0 +1,97 @@
+.banner {
+  min-height: 80vh;
+  position: relative;
+  background: {
+    image: linear-gradient(rgba(0, 0, 0, 0.4s), rgba(0, 0, 0, 0.4)),
+      url($index-banner);
+    size: cover;
+    attachment: fixed;
+    position: center center;
+  }
+
+  &-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    h1 {
+      font-size: 6rem;
+      line-height: 1.1;
+    }
+    h2 {
+      font-weight: 300;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.index-about {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  &-content {
+    @include center-all();
+    height: 100%;
+  }
+
+  &-content-wrapper {
+    max-width: 55rem;
+    padding: 1.5rem;
+  }
+}
+
+// services
+
+.index-services-box {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba($dark-color, 0.2);
+  img {
+    height: 24rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  &-content {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    background-color: rgba($primary-color, 0.8);
+    color: $light-color;
+    padding: 1rem;
+    transition: 0.5s ease;
+    height: 25rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 55%;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+
+    a {
+      color: $light-color;
+      display: block;
+      padding-top: 0.5rem;
+      border-top: 2px solid rgba($light-color, 0.2);
+    }
+  }
+  &:hover &-content {
+    top: 4rem;
+  }
+}

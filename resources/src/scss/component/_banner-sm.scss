@@ -1,0 +1,63 @@
+.banner-sm {
+  height: 50vh;
+  width: 100%;
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: center bottom;
+  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: inset -1px -2px 4px rgba(0, 0, 0, 0.2);
+  .banner-sm-wrapper {
+    color: $primary-color;
+    .welcome-span {
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+    h1 {
+      font-size: 5rem;
+      font-weight: bold;
+      color: $dark-color;
+      span {
+        color: $primary-color;
+      }
+    }
+    a {
+      color: $primary-color;
+      transition: 0.5s ease;
+      &:hover {
+        color: darken($primary-color, 20);
+      }
+    }
+  }
+}
+
+.bg-single-references {
+  background-image: linear-gradient(
+      to right,
+      white 20%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url($bg-single-reference);
+}
+
+.bg-single-references {
+  background-image: linear-gradient(
+      to right,
+      white 20%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url($bg-single-news);
+}
+
+.bg-search-result {
+  background-image: linear-gradient(
+      to right,
+      white 20%,
+      rgba(255, 255, 255, 0.2)
+    ),
+    url($bg-page-search);
+}

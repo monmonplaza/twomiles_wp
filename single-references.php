@@ -27,6 +27,22 @@
 
           <div class="article-body">  
               <?php the_content(); ?>
+
+              <div class="footer-meta">
+                <h3 class="footer-meta-cat">Category: <?php the_category()?></h3>
+                <div class="footer-meta-tags"> 
+                 <?php
+                    $posttags = get_the_tags();
+                    if ($posttags) {
+                    echo '<ul> Tags:';
+                    foreach($posttags as $tag) {
+                        echo '<li class="tag-item">' .$tag->name. '</li>'; 
+                    }
+                    echo '</ul>';
+                    }
+                    ?>
+                </div>
+            </div>
           </div>
                         
             <?php endwhile; else : ?>
@@ -36,7 +52,8 @@
         </div>
         <div class="col-md-4">
           <div class="sidebar">
-          <?php get_sidebar();?>
+            <h4>LOOK FOR RESOURCES</h4>
+            <?php echo do_shortcode( ' [searchandfilter fields="search,category,post_tag"  types="select" headings="Keywords,Categories,Tags" submit_label="Search"]' ); ?>
           </div>
     
         </div>

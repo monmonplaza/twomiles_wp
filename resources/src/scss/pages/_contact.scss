@@ -1,0 +1,85 @@
+.page-contact {
+  img {
+    object-fit: cover;
+    height: 50rem;
+    width: 100%;
+    display: block;
+    box-shadow: 4px 4px 10px rgba($dark-color, 0.2);
+  }
+}
+
+.maps {
+  background: {
+    image: linear-gradient(rgba($dark-color, 0.6), rgba($dark-color, 0.6)),
+      url($bg-contact-office);
+    repeat: no-repeat;
+    size: cover;
+    position: center bottom;
+  }
+  box-shadow: inset 1px 1px 5px rgba($dark-color, 0.2);
+}
+
+.map-wrapper {
+  display: flex;
+  box-shadow: 1px 1px 5px rgba($dark-color, 0.6);
+  border: 2px solid $lightgray-color;
+  .map-nav {
+    flex: 0 0 15%;
+    background-color: $lightgray-color;
+    padding: 1rem 0 1rem 1rem;
+    overflow: hidden;
+    h3 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+    }
+    ul li {
+      padding: 1rem 0rem 1rem 0.8rem;
+      cursor: pointer;
+      font-weight: 400;
+      transition: transform 0.5s ease;
+      border-bottom: 1px solid darken($lightgray-color, 10);
+    }
+  }
+  .map-content {
+    flex: 0 0 85%;
+  }
+}
+
+.map-office {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  min-height: 35rem;
+  &-info {
+    padding: 2rem;
+    background-color: $primary-color;
+    color: $light-color;
+    flex: 0 0 30%;
+    ul {
+      margin-top: 3rem;
+    }
+    ul li:nth-child(even) {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
+    ul li:nth-child(odd) {
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+  &-iframe {
+    flex: 0 0 70%;
+  }
+}
+
+.map-office-active {
+  display: flex;
+}
+
+.map-btn-active {
+  background-color: $primary-color;
+  color: $light-color;
+  transform: translateX(1rem);
+}

@@ -1,0 +1,93 @@
+.service-tax-wrapper {
+  ul {
+    margin-left: 1rem;
+
+    li i {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.service-list {
+  padding: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 40rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+
+  h3 {
+    text-transform: capitalize;
+    color: $light-color;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    li {
+      margin: 0;
+      padding: 0.5rem;
+      //   margin-bottom: 0.5rem;
+      border-bottom: 1px solid rgba($lightgray-color, 0.2);
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      h4,
+      a {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+      a {
+        color: $light-color;
+      }
+      &:hover {
+        background-color: darken($primary-color, 5);
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.service-bgprimary-list {
+  background-color: $primary-color;
+  color: $light-color;
+}
+
+.service-bglight-list {
+  background-color: $light-color;
+  color: $dark-color;
+  h3 {
+    color: $dark-color;
+  }
+
+  ul li {
+    &:hover {
+      background-color: darken($lightgray-color, 5);
+    }
+    a {
+      color: $dark-color;
+    }
+  }
+}
+
+.bg-services-1 {
+  background: {
+    image: linear-gradient(rgba($dark-color, 0.9), rgba($dark-color, 0.9)),
+      url($bg-service);
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+}
+.bg-services-2 {
+  background: {
+    image: linear-gradient(rgba($dark-color, 0.9), rgba($dark-color, 0.9)),
+      url($bg-service);
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+}
